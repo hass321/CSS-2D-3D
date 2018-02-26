@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+div{
+    padding: 0;
+    margin: 0;
+}
+div.container{
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    top: 100px;
+    left: 500px;
+    /* border: 2px solid rgba(0,0,0,0.4); */
+    background: #fff;
+    /*border-radius: 10px;*/
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px; 
+    transform:rotateZ(-20deg) skew(40deg);
+}
+.container:before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    height: 145px;
+    width: 20px;
+    background: rgba(208, 202, 202, 0.39);
+    /* border-radius: 5px; */
+    transform: rotate(0deg) skewY(-40deg);
+}
+.container:after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 13px;
+    height: 20px;
+    width: 79.3%;
+    background: rgba(220, 220, 219, 0.73);
+    /* border-radius: 5px; */
+    transform: rotate(40deg) skewY(-40deg) skewX(-10deg);
+}
